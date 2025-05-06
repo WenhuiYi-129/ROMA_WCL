@@ -1,0 +1,22 @@
+function SE= SE_compute(H_total, W_total, user_num, N, noise)
+
+for u =1:user_num
+    H_channel = H_total(:,:,u)';
+    E=zeros(N,N);
+    for i = 1:user_num
+        W_i = W_total(:,:,i);
+        B_i = H_channel*W_i;
+        if i==u
+            B_u = H_channel*W_i;
+        end
+        E = E+B_i*B_i';
+    end
+    E = E-B_u*B_u'+
+
+
+
+
+
+end
+
+end

@@ -1,0 +1,20 @@
+function H_channel=Channel(path_num, beta, theta_s, phi_s, theta_r, phi_r,...
+    lambda, r_t, r_r, M, N)
+
+H_channel = zeros(M,N);
+A_s = zeros(M,1);
+A_r = zeros(1,N);
+k_s = (2*pi/lambda)*[cos(theta_s)*cos(phi_s), cos(theta_s)*sin(phi_s), sin(theta_s)];
+k_r = (2*pi/lambda)*[cos(theta_r)*cos(phi_r), cos(theta_r)*sin(phi_r), sin(theta_r)];
+for m=1:M
+    r_tm = r_t(m,:);
+    A_s(m,1)=exp(1j*dot(k_s,r_tm));
+end
+
+for n=1:N
+    r_rn = r_r(n,:);
+    A
+
+
+
+end
