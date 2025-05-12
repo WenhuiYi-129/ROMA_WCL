@@ -11,7 +11,7 @@ A_max  = lambda*4;           % max of A
 A_min  = lambda*2;           % min of A
 N_A    = 5;                 % number of different A
 
-K = 5;  %user_num
+K = 4;  %user_num
 Nh      = 3;     
 Nv      = 3;  
 N = Nh*Nv;
@@ -44,12 +44,12 @@ SE_RO= zeros(N_P, Nuser);
 SE_FIS= zeros(N_P, Nuser);
 
 %%用户分布范围
-x_max = 10;
-x_min = -10;
-y_max = 10;
-y_min = -10;
-z_max =10;
-z_min = -10;
+x_max = 5;
+x_min = -5;
+y_max = 5;
+y_min = -5;
+z_max =5;
+z_min = -5;
 tic; 
 
 
