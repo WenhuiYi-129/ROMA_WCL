@@ -1,5 +1,5 @@
-% clc
-% clear 
+clc
+clear 
 
 
 % para
