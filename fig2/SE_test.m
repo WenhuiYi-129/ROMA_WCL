@@ -44,11 +44,11 @@ y_min = -5;
 z_max = 5;
 z_min = -5;
 tic; 
-% location_u = zeros(K,3);
-% %%用户位置
-% location_u(:,1)=(x_max-x_min)*rand(K,1)+x_min;
-% location_u(:,2)=(y_max-y_min)*rand(K,1)+y_min;
-% location_u(:,3)=(z_max-z_min)*rand(K,1)+z_min;
+location_u = zeros(K,3);
+%%用户位置
+location_u(:,1)=(x_max-x_min)*rand(K,1)+x_min;
+location_u(:,2)=(y_max-y_min)*rand(K,1)+y_min;
+location_u(:,3)=(z_max-z_min)*rand(K,1)+z_min;
 
 %%计算路径损耗
 path = zeros(K,1);
